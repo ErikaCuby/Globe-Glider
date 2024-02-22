@@ -58,6 +58,9 @@ span {
   font-family: news cycle;
   font-size: 13px;
 }
+.date {
+  opacity: 0.6;
+}
 .country {
   font-size: 11px;
   color: #06abcc;
