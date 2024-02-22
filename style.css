@@ -1,0 +1,81 @@
+body {
+  background-color: #eaeaea;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/269/original/world.png?1708585197);
+  background-size: cover;
+}
+.header {
+  text-align: center;
+  font-family: gruppo;
+  line-height: 15px;
+}
+.container {
+  font-family: poiret one;
+  display: block;
+  margin: 30px auto;
+  background-color: #fdfbf7;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 18px 50px -10px;
+}
+select {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background-color: #fdfdfd;
+  font-family: poiret one;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.section:hover {
+  transform: scale(1.05);
+  transition: all 350ms ease-in-out;
+}
+.section:last-child {
+  border: none;
+}
+.city {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.time {
+  font-size: 33px;
+  font-weight: bold;
+}
+span {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+}
+.date,
+.country {
+  font-family: news cycle;
+  font-size: 13px;
+}
+.country {
+  font-size: 11px;
+  color: #06abcc;
+  font-weight: bolder;
+  position: relative;
+  top: -5px;
+}
+.city-date {
+  position: relative;
+  top: 8px;
+}
+footer {
+  text-align: center;
+  font-family: gruppo;
+  font-size: 14px;
+}
+footer a {
+  text-decoration: none;
+  color: #06abcc;
+  font-weight: bold;
+}
