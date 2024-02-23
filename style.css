@@ -74,6 +74,15 @@ span {
   position: relative;
   top: 12px;
 }
+.back {
+  display: block;
+  margin: 20px 0 0 auto;
+  position: relative;
+  left: 5px;
+  text-decoration: none;
+  color: #06abcc;
+  font-size: 12px;
+}
 footer {
   text-align: center;
   font-family: gruppo;
@@ -86,4 +95,3 @@ footer a {
   background-color: #fdfdfdcf;
   border-radius: 5px;
 }
-
