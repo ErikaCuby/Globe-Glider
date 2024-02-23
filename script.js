@@ -1,6 +1,7 @@
 function updateTime() {
   //Kyoto
   let kyotoElement = document.querySelector("#kyoto");
+  //nasledujuce if nam zaruci, aby nevyskakoval error v konzole pri dvojslovnych nazvov miest...
   if (kyotoElement) {
     let kyotoDateElement = kyotoElement.querySelector(".date");
     let kyotoTimeElement = kyotoElement.querySelector(".time");
@@ -45,6 +46,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+      cityTimeZone = moment.tz.guess();
+    }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#city");
