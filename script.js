@@ -42,5 +42,31 @@ function updateTime() {
     );
   }
 }
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#city");
+  //ak by sme dole pri "=" dali pred "+"", tak mesto zo select zoznamu nam prideli na hlavnu stranu k dalsim mestam - citiesElement.innerHTML +=
+  citiesElement.innerHTML = `
+  <div class="city">
+        <div class="section">
+          <div class="city-date">
+            <div class="city">${cityName}</div>
+            <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
+          </div>
+          <div class="time-country">
+            <div class="time">${cityTime.format(
+              "h:mm:ss"
+            )} <span>${cityTime.format("A")}</div>
+          </div>
+        </div>
+  `;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelectElement = document.querySelector("#cities");
+citiesSelectElement.addEventListener("change", updateCity);

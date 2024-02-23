@@ -83,4 +83,6 @@ footer a {
   text-decoration: none;
   color: #06abcc;
   font-weight: bold;
+  background-color: #fdfdfdcf;
+  border-radius: 5px;
 }
